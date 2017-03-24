@@ -1,0 +1,18 @@
+# machine-local directories and files
+swp/
+undo/
+view/
+local.vim
+
+# generated binary files
+spell/*.spl
+
+# plugin manager
+autoload/plug.vim*
+plugged/
+
+# history
+.netrwhist
+
+# windows
+desktop.ini
