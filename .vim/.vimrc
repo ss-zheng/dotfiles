@@ -3,7 +3,7 @@ call plug#begin()
 call plug#end()
 
 "filetype plugin indent on
-"set mouse=a
+set mouse=a
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -30,6 +30,12 @@ set undofile                " permanent undo history
 set undolevels=1000         " how many undos in history
 set undoreload=10000        " max lines for saving undo before reload
 
+set foldenable
+set foldmethod=syntax
+set foldlevel=20
+let g:livepreview_prevautocmdiewer='xdg-open'
+" autocmd Filetype tex setl updatetime=1000
+
 nnoremap <silent> <CR> :w<CR>
 nnoremap j gj
 nnoremap k gk
@@ -46,6 +52,8 @@ inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 inoremap <Up> <Nop>
 inoremap <Down> <Nop>
+
+nnoremap <silent> <C-l> :LLPStartPreview<CR> 
 
 "let &t_SI = "\<Esc>[5 q"
 "let &t_SR = "\<Esc>[3 q"
