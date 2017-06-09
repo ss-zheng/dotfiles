@@ -1,9 +1,21 @@
+#.dotfiles
+
 Personal dotfiles settings (.vim, .ssh)
 
-Start with getting the source
-git clone https://github.com/ss-zheng/dotfiles.git
+## Get Started
 
-Inside your .vimrc
+Getting the source
+
+```
+git clone https://github.com/ss-zheng/dotfiles.git
+```
+
+## Settings
+
+Inside your .vimrc you can source different file to gain different vim features.
+
+```
 source ./.dotfiles/vim/default.vim 
 source ./.dotfiles/vim/keyMap.vim
 source ./.dotfiles/vim/plugin.vim
+```
