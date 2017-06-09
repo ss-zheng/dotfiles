@@ -19,3 +19,6 @@ source ./.dotfiles/vim/default.vim
 source ./.dotfiles/vim/keyMap.vim
 source ./.dotfiles/vim/plugin.vim
 ```
+
+NOTE: This vim setting use vim-plug as vim plugin manager.
+Run :PlugInstall inside vim to enable plugins
