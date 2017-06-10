@@ -10,6 +10,9 @@ call plug#begin()
      Plug 'pangloss/vim-javascript'
 call plug#end()
 
+" settings for ctrlp
+nnoremap fu :CtrlPFunky<CR>
+
 " Pathogen
 execute pathogen#infect()
 

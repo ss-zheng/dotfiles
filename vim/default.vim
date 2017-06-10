@@ -25,3 +25,8 @@ set undoreload=10000        " max lines for saving undo before reload
 set foldenable
 set foldmethod=syntax
 set foldlevel=20
+
+set wildignore+=*.a,*.o
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.svn
+set wildignore+=*.swp,*.tmp
+

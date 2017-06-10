@@ -7,6 +7,9 @@ nnoremap <BS> :nohlsearch<CR>
 nnoremap <silent> Q :q<CR>
 nnoremap <silent> <C-l> :LLPStartPreview<CR> 
 
+
+" nnoremap s <Nop>
+" nnoremap S <Nop>
 nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 nnoremap <Up> <Nop>
