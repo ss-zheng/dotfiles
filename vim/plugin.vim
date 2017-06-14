@@ -8,7 +8,34 @@ call plug#begin()
      Plug 'scrooloose/nerdtree'
      Plug 'tpope/vim-fugitive'
      Plug 'pangloss/vim-javascript'
+     Plug 'airblade/vim-gitgutter'
+     Plug 'ternjs/tern_for_vim'
+     Plug 'mattn/emmet-vim'
+     Plug 'sjl/gundo.vim'
+     Plug 'vim-airline/vim-airline'
+     Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+" settings for airline
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1 "show up powerline fonts
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+
+" settings for gundo
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_width = 60
+let g:gundo_preview_height = 15 
+let g:gundo_right = 0 " gui show up on the right side
+
+" settings for emmet-vim
+" let g:user_emmet_mode='n'    "only enable normal mode functions.
+" let g:user_emmet_mode='inv'  "enable all functions, which is equal to
+" let g:user_emmet_mode='a'    "enable all function in all mode
+
+" let g:user_emmet_install_global = 0 "enable just for html/css
+" autocmd FileType html,css EmmetInstall.
 
 " settings for ctrlp
 nnoremap fu :CtrlPFunky<CR>
