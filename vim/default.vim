@@ -34,3 +34,5 @@ set undodir=$VIMDIR/undo    " undo file directory
 set undofile                " permanent undo history
 set undolevels=1000         " how many undos in history
 set undoreload=10000        " max lines for saving undo before reload
+
+nnoremap <Leader>b :ls<CR>:b<Space>
