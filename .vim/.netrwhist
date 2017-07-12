@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/ACE/Documents/2016Fall/CS246/a4q3'
-let g:netrw_dirhist_2='/Users/ACE/Documents/2016Fall/CS246/cc3k'
-let g:netrw_dirhist_3='/Users/ACE/Documents/2016Fall/CS246/dungeon'
-let g:netrw_dirhist_4='/Users/ACE/terrain/.git'
-let g:netrw_dirhist_5='/Users/ACE/Documents/Unity Project/test'
-let g:netrw_dirhist_6='/Users/aigod/.dotfiles/.git'
