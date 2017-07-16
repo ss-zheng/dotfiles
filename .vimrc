@@ -8,10 +8,13 @@ source ~/.vim/keyMap.vim
 let g:livepreview_prevautocmdiewer='xdg-open'
 " autocmd Filetype tex setl updatetime=1000
 
-
 " Resume last position {{{
 autocmd BufReadPost *
 			\ if line("'\"") >= 1 && line("'\"") <= line("$") |
 			\   exe "normal! g`\"" |
 			\ endif
 " }}}
+
+if !isdorectory(&undodir)
+    call mkdir(&undodir, 'p')
+endif
