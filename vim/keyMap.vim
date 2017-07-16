@@ -7,9 +7,9 @@ nnoremap <Down> g<Down>
 nnoremap <BS> :nohlsearch<CR>
 nnoremap <silent> Q :q<CR>
 nnoremap <silent> <C-l> :LLPStartPreview<CR> 
-nnoremap <Leader>n :bn<CR>
-nnoremap <Leader>b :bp<CR>
-nnoremap <Leader>d :bp<CR>
+nnoremap L :bn<CR>
+nnoremap H :bp<CR>
+nnoremap - :bd<CR>
 nnoremap <Left> <Nop>
 nnoremap <Right> <Nop>
 nnoremap <Up> <Nop>

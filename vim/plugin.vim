@@ -44,10 +44,6 @@ let g:gundo_right = 0 " gui show up on the right side
 nnoremap fu :CtrlPFunky<CR>
 " }}}
 
-" Pathogen {{{
-execute pathogen#infect()
-" }}}
-
 " settings for syntastic {{{
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
