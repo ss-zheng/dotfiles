@@ -20,7 +20,7 @@ set backspace=indent,eol,start
 
 " Permanent Undo Settings {{{
 let $VIMDIR=".vim"
-set undodir=/u5/s7zheng/.vim/undo    " undo file directory
+set undodir=~/.vim/undo    " undo file directory
 set undofile                " permanent undo history
 set undolevels=1000         " how many undos in history
 set undoreload=10000        " max lines for saving undo before reload

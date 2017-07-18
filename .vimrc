@@ -15,6 +15,6 @@ autocmd BufReadPost *
 			\ endif
 " }}}
 
-if !isdorectory(&undodir)
+if !isdirectory(&undodir)
     call mkdir(&undodir, 'p')
 endif

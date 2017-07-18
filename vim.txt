@@ -1,0 +1,15 @@
+ctrlw, o : close all windows but the current one in use
+ctrlw, q : close current window
+ctrlw, s : split the window in horizontal
+ctrlw, v : split the window in vertical
+:split filename : split window horizontally and load the file
+:vsplit filename : split window horizontally and load the file
+
+ctrlu : half page up
+ctrld : half page down
+$ : to the end of the line
+0 : to the beginning of the line
+^ : to the first char of the line
+
+f + char : jump to the next char
+F + char : jump to the previous char

@@ -8,6 +8,7 @@ call plug#begin()
      Plug 'scrooloose/nerdtree'
      Plug 'tpope/vim-fugitive'
      Plug 'pangloss/vim-javascript'
+     Plug 'mxw/vim-jsx'
      Plug 'airblade/vim-gitgutter'
      Plug 'ternjs/tern_for_vim'
      Plug 'mattn/emmet-vim'
@@ -15,6 +16,11 @@ call plug#begin()
      Plug 'vim-airline/vim-airline'
      Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+" settings for jsx {{{
+let g:jsx_ext_required = 0 " apply jsx syntax hightlight, indent with .js files
+"let g:jsx_pragma_required = 1 " apply js syntax hightlight, indent with pre-v0.12 @jsx React.DOM pragma
+" }}}
 
 " settings for airline {{{
 set laststatus=2
