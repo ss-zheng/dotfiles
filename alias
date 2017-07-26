@@ -1,4 +1,4 @@
-alias ls='ls --color'
+alias ls="ls --color"
 alias ..="cd .."
 alias g++14="g++-5 -std=c++14"
 alias c++="clang++ -std=c++14"
@@ -7,3 +7,4 @@ alias msub="marmoset_submit cs241"
 alias luw="ssh -Y s47zheng@linux.student.cs.uwaterloo.ca"
 alias ma="java mips.array"
 alias mt="java mips.twoints"
+alias vi="vim"

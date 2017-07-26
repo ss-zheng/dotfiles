@@ -17,6 +17,18 @@ call plug#begin()
      Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
+" settings for ycm {{{
+" let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1  "colse auto complete when quiting the insert mode
+let g:ycm_confirm_extra_conf                       = 0  "when existing local python conf file, include with out asking
+let g:ycm_min_num_of_chars_for_completion          = 1  "start completion after typing one character
+let g:ycm_seed_identifiers_with_syntax             = 1 "auto complete language key words
+let g:ycm_global_ycm_extra_conf = "~/.dotfiles/ycm_extra_conf.py" "set global ycm extra conf path
+let g:ycm_semantic_triggers = {
+    \   'css': [ 're!^\s{4}', 're!:\s+' ],
+    \ } 
+" }}}
+
 " settings for jsx {{{
 let g:jsx_ext_required = 0 " apply jsx syntax hightlight, indent with .js files
 "let g:jsx_pragma_required = 1 " apply js syntax hightlight, indent with pre-v0.12 @jsx React.DOM pragma

@@ -15,6 +15,11 @@ nnoremap <Right> <Nop>
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <space> za
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <leader>g :YcmCompleter GoTo<CR>
 " nnoremap s <Nop>
 " nnoremap S <Nop>
 " }}}
