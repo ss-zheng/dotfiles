@@ -2,7 +2,7 @@ if [ -f "~/.profile" ]; then
     source ~/.profile
 fi
 
-source  /etc/profile.d/vte.sh
+source /etc/profile.d/vte.sh  #open the shell under the same directory
 source ~/.dotfiles/alias
 source ~/.dotfiles/shell-func
 
