@@ -1,21 +1,23 @@
-set mouse=a
-set showcmd
-set tabstop=4
-set expandtab
-set softtabstop=4
+set backspace=indent,eol,start
 set cursorline
-set showmatch
-set incsearch
-set hlsearch
+set expandtab
 set foldenable
-set wildmenu
+set hlsearch
+set incsearch
 set lazyredraw
+set modeline
+set mouse=a
+set nowritebackup
 set number
-set smartindent
-set shiftwidth=4
 set relativenumber
 set scrolloff=5
-set backspace=indent,eol,start
+set shiftwidth=4
+set showcmd
+set showmatch
+set smartindent
+set softtabstop=4
+set tabstop=4
+set wildmenu
 "set whichwrap=h,l,<,>,[,]
 
 " Permanent Undo Settings {{{

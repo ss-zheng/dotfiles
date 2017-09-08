@@ -2,11 +2,11 @@ alias ls="ls --color"
 alias ..="cd .."
 alias g++14="g++ -std=c++14"
 alias c++="clang++ -std=c++14"
-alias vi="vi -X"
-alias msub="marmoset_submit cs241"
+#alias diff='diff --color=auto'
+alias egrep='egrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls --color'
 alias luw="ssh -Y s47zheng@linux.student.cs.uwaterloo.ca"
-alias ma="java mips.array"
-alias mt="java mips.twoints"
 alias vi="vim"
 alias gd="git diff"
 alias gdc="git diff --cached"
@@ -17,3 +17,5 @@ alias ga="git add"
 alias gaa="git add ."
 alias gps="git push"
 alias gpl="git pull"
+
+# vim: ft=sh
