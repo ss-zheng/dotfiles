@@ -1,12 +1,14 @@
 set backspace=indent,eol,start
+set breakindent
 set cursorline
-set expandtab
 set foldenable
 set hlsearch
 set incsearch
 set lazyredraw
+set linebreak
 set modeline
 set mouse=a
+set noexpandtab
 set nowritebackup
 set number
 set relativenumber
@@ -15,8 +17,8 @@ set shiftwidth=4
 set showcmd
 set showmatch
 set smartindent
-set softtabstop=4
-set tabstop=4
+set softtabstop=0
+set tabstop=8
 set wildmenu
 "set whichwrap=h,l,<,>,[,]
 
