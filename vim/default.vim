@@ -20,6 +20,7 @@ set smartindent
 set softtabstop=0
 set tabstop=8
 set wildmenu
+set spell
 "set whichwrap=h,l,<,>,[,]
 
 " Permanent Undo Settings {{{
