@@ -1,7 +1,6 @@
 call plug#begin()
      Plug 'Valloric/YouCompleteMe'
      Plug 'airblade/vim-gitgutter'
-     Plug 'altercation/vim-colors-solarized'
      Plug 'kien/ctrlp.vim'
      Plug 'lervag/vimtex'
      Plug 'mattn/emmet-vim'
@@ -16,6 +15,8 @@ call plug#begin()
      Plug 'tpope/vim-surround'
      Plug 'vim-airline/vim-airline'
      Plug 'vim-airline/vim-airline-themes'
+	 " Plug 'MaxSt/FlatColor'
+     Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " settings for vimtex {{{
@@ -44,10 +45,11 @@ let g:vimtex_quickfix_latexlog = {
 " settings for ycm {{{
 " let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1  "colse auto complete when quiting the insert mode
-let g:ycm_confirm_extra_conf                       = 0  "when existing local python conf file, include with out asking
+let g:ycm_confirm_extra_conf                       = 1  "when existing local python conf file, include with out asking
 let g:ycm_min_num_of_chars_for_completion          = 1  "start completion after typing one character
 let g:ycm_seed_identifiers_with_syntax             = 1 "auto complete language key words
 let g:ycm_global_ycm_extra_conf = "~/.dotfiles/ycm_extra_conf.py" "set global ycm extra conf path
+let g:ycm_extra_conf_globlist = ['~/cs350-os161/99/.ycm_extra_conf.py']
 let g:ycm_semantic_triggers = {
     \   'css': [ 're!^\s{4}', 're!:\s+' ],
     \ } 

@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+file_list="vim vimrc zshrc bashrc tern-config tmux.conf"
+
+for file in ${file_list}; do
+    if [ -e "$HOME/.dotfiles/$file" ]; then
+	rm -rf "$HOME/.$file"
+        ln -s "$HOME/.dotfiles/$file" "$HOME/.$file"
+        if [ $? = 0 ]; then
+            echo "Created symlink $HOME/.$file " "->" " $HOME/.dotfiles/$file" 1>&2
+        fi
+    else 
+        echo "Error: $file does not exist." 1>&2
+    fi
+done

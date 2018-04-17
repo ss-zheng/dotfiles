@@ -17,8 +17,9 @@ set shiftwidth=4
 set showcmd
 set showmatch
 set smartindent
+set autoindent
 set softtabstop=0
-set tabstop=8
+set tabstop=4
 set wildmenu
 set spell
 "set whichwrap=h,l,<,>,[,]
