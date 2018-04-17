@@ -4,7 +4,7 @@ filetype plugin indent on " enables filetype detection, enable filetype-specific
 source ~/.vim/default.vim
 source ~/.vim/plugin.vim
 source ~/.vim/keyMap.vim
-source ~/.vim/colorSkin.vim
+" source ~/.vim/colorSkin.vim
 
 let g:livepreview_prevautocmdiewer='xdg-open' "latex live preview
 " autocmd Filetype tex setl updatetime=1000

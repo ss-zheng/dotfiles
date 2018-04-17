@@ -1,4 +1,5 @@
 call plug#begin()
+	 Plug 'flazz/vim-colorschemes'
      Plug 'Valloric/YouCompleteMe'
      Plug 'airblade/vim-gitgutter'
      Plug 'kien/ctrlp.vim'
@@ -15,9 +16,11 @@ call plug#begin()
      Plug 'tpope/vim-surround'
      Plug 'vim-airline/vim-airline'
      Plug 'vim-airline/vim-airline-themes'
-	 " Plug 'MaxSt/FlatColor'
-     Plug 'altercation/vim-colors-solarized'
 call plug#end()
+
+" settings for vim-colorschemes {{{
+colorscheme 256-jungle
+" }}}
 
 " settings for vimtex {{{
 
