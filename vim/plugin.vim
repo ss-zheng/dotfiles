@@ -18,6 +18,29 @@ call plug#begin()
      Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
+" settings for vimtex {{{
+
+" warnings
+let g:vimtex_quickfix_latexlog = {
+          \ 'default' : 1,
+          \ 'general' : 1,
+          \ 'references' : 1,
+          \ 'overfull' : 0,
+          \ 'underfull' : 0,
+          \ 'font' : 1,
+          \ 'packages' : {
+          \   'default' : 1,
+          \   'natbib' : 1,
+          \   'biblatex' : 1,
+          \   'babel' : 1,
+          \   'hyperref' : 1,
+          \   'scrreprt' : 1,
+          \   'fixltx2e' : 1,
+          \   'titlesec' : 1,
+          \ },
+          \}
+" }}}
+
 " settings for ycm {{{
 " let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1  "colse auto complete when quiting the insert mode

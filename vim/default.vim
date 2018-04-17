@@ -11,7 +11,7 @@ set mouse=a
 set noexpandtab
 set nowritebackup
 set number
-set relativenumber
+" set relativenumber
 set scrolloff=5
 set shiftwidth=4
 set showcmd
