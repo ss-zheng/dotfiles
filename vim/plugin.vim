@@ -19,7 +19,8 @@ call plug#begin()
 call plug#end()
 
 " settings for vim-colorschemes {{{
-colorscheme 256-jungle
+colorscheme gruvbox
+set background=dark
 " }}}
 
 " settings for vimtex {{{
