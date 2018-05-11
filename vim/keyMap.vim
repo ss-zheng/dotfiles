@@ -25,10 +25,15 @@ nnoremap <leader>g :YcmCompleter GoTo<CR>
 " }}}
 
 " insert mode map {{{
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
+" inoremap <Left> <Nop>
+" inoremap <Right> <Nop>
+" inoremap <Up> <Nop>
+" inoremap <Down> <Nop>
+" }}}
+
+" visual mode map {{{
+xnoremap j gj
+xnoremap k gk
 " }}}
 
 "/* Forget meaning {{{ */
