@@ -21,7 +21,6 @@ set autoindent
 set softtabstop=0
 set tabstop=4
 set wildmenu
-" set spell
 "set whichwrap=h,l,<,>,[,]
 
 " Permanent Undo Settings {{{
@@ -50,11 +49,15 @@ endfunction
 set foldtext=NeatFoldText()
 " }}}
 
+" Spell setting {{{
+set spell spelllang=en_ca
+" hi clear SpellBad
+" hi SpellBad cterm=underline
+" }}}
 
 " Wild Ignore {{{
 set wildignore+=*.a,*.o
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.svn
 set wildignore+=*.swp,*.tmp
 " }}}
-
 

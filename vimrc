@@ -2,8 +2,8 @@ set encoding=utf-8
 filetype plugin indent on " enables filetype detection, enable filetype-specific scripts (ftplugins), enables filetype-specific indent script
 
 source ~/.vim/default.vim
-source ~/.vim/plugin.vim
 source ~/.vim/keyMap.vim
+source ~/.vim/plugin.vim
 
 let g:livepreview_prevautocmdiewer='xdg-open' "latex live preview
 " autocmd Filetype tex setl updatetime=1000

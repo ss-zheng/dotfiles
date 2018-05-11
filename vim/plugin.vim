@@ -21,6 +21,8 @@ call plug#end()
 " settings for vim-colorschemes {{{
 colorscheme gruvbox
 set background=dark
+let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_guisp_fallback='bg'
 " }}}
 
 " settings for vimtex {{{
