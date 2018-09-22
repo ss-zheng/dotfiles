@@ -1,22 +1,29 @@
 call plug#begin()
-	 Plug 'flazz/vim-colorschemes'
-     Plug 'Valloric/YouCompleteMe'
-     Plug 'airblade/vim-gitgutter'
-     Plug 'kien/ctrlp.vim'
-     Plug 'lervag/vimtex'
-     Plug 'mattn/emmet-vim'
-     Plug 'mxw/vim-jsx'
-     Plug 'pangloss/vim-javascript'
-     Plug 'scrooloose/nerdtree'
-     Plug 'scrooloose/syntastic'
-     Plug 'sjl/gundo.vim'
-     Plug 'ternjs/tern_for_vim'
-     Plug 'tpope/vim-commentary'
-     Plug 'tpope/vim-fugitive'
-     Plug 'tpope/vim-surround'
-     Plug 'vim-airline/vim-airline'
-     Plug 'vim-airline/vim-airline-themes'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'Valloric/YouCompleteMe'
+Plug 'airblade/vim-gitgutter'
+Plug 'kien/ctrlp.vim'
+Plug 'lervag/vimtex'
+Plug 'mattn/emmet-vim'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'sjl/gundo.vim'
+Plug 'ternjs/tern_for_vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+" settings for markdown-preview {{{
+nnoremap <silent> <c-m> <Plug>MarkdownPreview
+nnoremap <silent> <c-M> <Plug>StopMarkdownPreview
+" }}}
 
 " settings for vim-colorschemes {{{
 colorscheme gruvbox
@@ -29,23 +36,23 @@ let g:gruvbox_guisp_fallback='bg'
 
 " warnings
 let g:vimtex_quickfix_latexlog = {
-          \ 'default' : 1,
-          \ 'general' : 1,
-          \ 'references' : 1,
-          \ 'overfull' : 0,
-          \ 'underfull' : 0,
-          \ 'font' : 1,
-          \ 'packages' : {
-          \   'default' : 1,
-          \   'natbib' : 1,
-          \   'biblatex' : 1,
-          \   'babel' : 1,
-          \   'hyperref' : 1,
-          \   'scrreprt' : 1,
-          \   'fixltx2e' : 1,
-          \   'titlesec' : 1,
-          \ },
-          \}
+			\ 'default' : 1,
+			\ 'general' : 1,
+			\ 'references' : 1,
+			\ 'overfull' : 0,
+			\ 'underfull' : 0,
+			\ 'font' : 1,
+			\ 'packages' : {
+			\   'default' : 1,
+			\   'natbib' : 1,
+			\   'biblatex' : 1,
+			\   'babel' : 1,
+			\   'hyperref' : 1,
+			\   'scrreprt' : 1,
+			\   'fixltx2e' : 1,
+			\   'titlesec' : 1,
+			\ },
+			\}
 " }}}
 
 " settings for ycm {{{
@@ -57,8 +64,8 @@ let g:ycm_seed_identifiers_with_syntax             = 1 "auto complete language k
 let g:ycm_global_ycm_extra_conf = "~/.dotfiles/ycm_extra_conf.py" "set global ycm extra conf path
 let g:ycm_extra_conf_globlist = ['~/cs350-os161/99/.ycm_extra_conf.py']
 let g:ycm_semantic_triggers = {
-    \   'css': [ 're!^\s{4}', 're!:\s+' ],
-    \ } 
+			\   'css': [ 're!^\s{4}', 're!:\s+' ],
+			\ } 
 " }}}
 
 " settings for jsx {{{
@@ -103,6 +110,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" let g:syntastic_quiet_messages = { "type": "style" }
 "}}}
 
 " settings for nerdtree {{{
