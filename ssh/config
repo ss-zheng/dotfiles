@@ -1,3 +1,7 @@
 Host se
     HostName linux.student.cs.uwaterloo.ca
     User s47zheng
+
+Host ds
+	HostName datasci.cs.uwaterloo.ca
+	User s47zheng
