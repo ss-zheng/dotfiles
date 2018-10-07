@@ -6,6 +6,10 @@ if [ -f "/etc/profile.d/vte.sh" ];then
     source /etc/profile.d/vte.sh  #open the shell under the same directory
 fi
 
+if [ -r "/usr/share/bash-completion/bash_completion" ]; then
+	source "/usr/share/bash-completion/bash_completion"
+fi
+
 source ~/.dotfiles/alias
 source ~/.dotfiles/shell-func
 
@@ -21,3 +25,8 @@ else
 fi
 
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+export HISTCONTROL=ignoreboth:erasedups
+
+if [ -x /bin/showpath ]; then
+    PATH=`/bin/showpath /u/cs350/sys161/bin /u/cs350/bin standard`$PATH
+fi
