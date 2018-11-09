@@ -1,7 +1,12 @@
+" set relativenumber
+" set spell
+"set whichwrap=h,l,<,>,[,]
+set autoindent
 set backspace=indent,eol,start
 set breakindent
 set cursorline
 set foldenable
+set gdefault
 set hlsearch
 set incsearch
 set lazyredraw
@@ -11,13 +16,11 @@ set mouse=a
 set noexpandtab
 set nowritebackup
 set number
-" set relativenumber
 set scrolloff=5
 set shiftwidth=4
 set showcmd
 set showmatch
 set smartindent
-set autoindent
 set softtabstop=0
 set tabstop=4
 set wildmenu

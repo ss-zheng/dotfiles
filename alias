@@ -17,4 +17,9 @@ alias gaa="git add ."
 alias gps="git push"
 alias gpl="git pull"
 
+alias ml="matlab -nosplash -nodesktop"
+alias lc="leetcode user -l"
+
+alias cs350="cd ~/cs350-os161/"
+
 # vim: ft=sh

@@ -1,4 +1,56 @@
-export EDITOR=vim
-mkcd() {
+#vim: ft=sh
+#export EDITOR=vim
+function mkcd {
     mkdir -p -- "$1" && cd -P -- "$1"
+}
+
+function cs451 {
+	export PATH=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin:/u3/cs451/packages/spark/bin:/u3/cs451/packages/hadoop/bin:/u3/cs451/packages/maven/bin:/u3/cs451/packages/scala/bin:$PATH
+	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+}
+
+function cpvi {
+	cp "$1" "$2" && vi "$2"
+}
+
+function com161 {
+	(
+	cd ~/cs350-os161/os161-1.99/kern/compile/ASST3 && bmake
+	if [ $? = 0 ]; then
+		bmake install
+	fi
+	)
+}
+
+function run161 {
+	(
+	cd ~/cs350-os161/root
+	#sys161 kernel "p uw-testbin/vm-data1; q"
+	#sys161 kernel "p uw-testbin/vm-data3; q"
+	#sys161 kernel "p testbin/add 2 3; q"
+	#sys161 kernel "p uw-testbin/widefork; q"
+	sys161 kernel "p uw-testbin/romemwrite; q"
+	sys161 kernel "p uw-testbin/vm-crash2; q"
+	#sys161 kernel "p testbin/sort;q" 
+	#sys161 kernel "p testbin/sort; p testbin/sort;p testbin/sort; p testbin/sort; p testbin/sort; q"
+	#sys161 kernel "p testbin/matmult; p testbin/matmult;p testbin/matmult;p testbin/matmult;q"
+	# sys161 kernel "p uw-testbin/vm-data1;p uw-testbin/vm-data1;p uw-testbin/vm-data1;p uw-testbin/vm-data1; q"
+	# sys161 kernel "p uw-testbin/widefork;p uw-testbin/widefork;p uw-testbin/widefork;p uw-testbin/widefork;p uw-testbin/widefork; q"
+	# sys161 kernel "p uw-testbin/hogparty;p uw-testbin/hogparty;p uw-testbin/hogparty;p uw-testbin/hogparty;p uw-testbin/hogparty; q"
+	)
+}
+
+function gdb161 {
+	(
+	cd ~/cs350-os161/root
+	#sys161 -w kernel "p testbin/add 2 3; q"
+	#sys161 -w kernel "p uw-testbin/vm-data1; q"
+	#sys161 -w kernel "p uw-testbin/vm-data3; q"
+	#sys161 -w kernel "p uw-testbin/romemwrite; q"
+	#sys161 -w kernel "p uw-testbin/vm-crash2; q"
+	sys161 -w kernel "p testbin/sort;q" 
+	#sys161 -w kernel "p testbin/sort; p testbin/sort;p testbin/sort; p testbin/sort; p testbin/sort; q"
+	#sys161 -w kernel "p testbin/matmult; q"
+	#sys161 -w kernel "p uw-testbin/vm-data1; q"
+	)
 }
