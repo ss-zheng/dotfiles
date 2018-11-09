@@ -21,8 +21,19 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " settings for markdown-preview {{{
-nnoremap <silent> <c-m> <Plug>MarkdownPreview
-nnoremap <silent> <c-M> <Plug>StopMarkdownPreview
+
+" let g:mkdp_auto_start = 1
+let g:mkdp_auto_open = 1
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 1
+nnoremap <silent> <leader>m :call MarkdownToggle()<CR>
+function! MarkdownToggle()
+    if g:mkdp_server_started
+		execute "normal \<Plug>StopMarkdownPreview"
+    else
+		execute "normal \<Plug>MarkdownPreview"
+    endif
+endfunction
 " }}}
 
 " settings for vim-colorschemes {{{
