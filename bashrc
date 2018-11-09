@@ -24,9 +24,10 @@ else
     PS1='\[\033[1;32m\] \w\n\[\033[1;34m\]...\[\033[0m\] '
 fi
 
-export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-export HISTCONTROL=ignoreboth:erasedups
+# export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+# export HISTCONTROL=ignoreboth:erasedups
 
-if [ -x /bin/showpath ]; then
-    PATH=`/bin/showpath /u/cs350/sys161/bin /u/cs350/bin standard`$PATH
-fi
+# if [ -x /bin/showpath ]; then
+#     PATH=`/bin/showpath /u/cs350/sys161/bin /u/cs350/bin standard`$PATH
+# fi
+export PATH="$HOME/Library/Python/3.6/bin:$HOME/bin:$HOME/.local/bin:$PATH"
