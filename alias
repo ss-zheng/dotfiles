@@ -1,7 +1,9 @@
+# vim: ft=sh
 alias ..="cd .."
 alias g++14="g++ -std=c++14"
 alias c++="clang++ -std=c++14"
-#alias diff='diff --color=auto'
+# alias diff='diff --color=auto'
+alias diff='colordiff'
 alias egrep='egrep --color=auto'
 alias grep='grep --color=auto'
 alias luw="ssh -Y s47zheng@linux.student.cs.uwaterloo.ca"
@@ -21,5 +23,3 @@ alias ml="matlab -nosplash -nodesktop"
 alias lc="leetcode user -l"
 
 alias cs350="cd ~/cs350-os161/"
-
-# vim: ft=sh

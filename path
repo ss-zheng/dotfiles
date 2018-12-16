@@ -1,0 +1,4 @@
+# vim: ft=sh
+if [ -r $HOME/.dotfiles/path.local ]; then
+	. $HOME/.dotfiles/path.local
+fi

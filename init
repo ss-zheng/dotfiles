@@ -1,8 +1,18 @@
 #!/bin/bash 
 
-file_list="vim vimrc zshrc bashrc tern-config tmux.conf"
+file_list=(
+	bash_profile
+	bashrc
+	tern-config
+	tmux.conf
+	vim
+	vimrc
+	zprofile
+	zshenv
+	zshrc
+)
 
-for file in ${file_list}; do
+for file in ${file_list[@]}; do
     if [ -e "$HOME/.dotfiles/$file" ]; then
 	rm -rf "$HOME/.$file"
         ln -s "$HOME/.dotfiles/$file" "$HOME/.$file"
