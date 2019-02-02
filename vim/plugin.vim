@@ -121,7 +121,22 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-" let g:syntastic_quiet_messages = { "type": "style" }
+let g:syntastic_quiet_messages = { "level": [], "type": ["style"] }
+
+fun! SyntasticToggleQuiet(k, v)
+	let idx = index(g:syntastic_quiet_messages[a:k], a:v)
+	if idx == -1
+		call add(g:syntastic_quiet_messages[a:k], a:v)
+		echom 'Syntastic: '.a:k.':'.a:v.' disabled (filtered).'
+	else
+		call remove(g:syntastic_quiet_messages[a:k], idx)
+		echom 'Syntastic: '.a:k.':'.a:v.' enabled (not filtered).'
+	endif
+endfun
+nnoremap <silent> <leader>s :call SyntasticToggleQuiet('type', 'style')<CR>
+nnoremap <silent> <leader>w :call SyntasticToggleQuiet('level', 'warnings')<CR>
+" command! SyntasticToggleWarnings call SyntasticToggleQuiet('level', 'warnings')
+" command! SyntasticToggleStyle    call SyntasticToggleQuiet('type', 'style')
 "}}}
 
 " settings for nerdtree {{{
