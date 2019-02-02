@@ -2,3 +2,4 @@
 /vim/autoload/vim-plug.vim*
 /vim/undo/
 *.local
+ssh/*
