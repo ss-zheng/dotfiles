@@ -29,9 +29,9 @@ let g:mkdp_refresh_slow = 1
 nnoremap <silent> <leader>m :call MarkdownToggle()<CR>
 function! MarkdownToggle()
     if g:mkdp_server_started
-		execute "normal \<Plug>StopMarkdownPreview"
+        execute "normal \<Plug>StopMarkdownPreview"
     else
-		execute "normal \<Plug>MarkdownPreview"
+        execute "normal \<Plug>MarkdownPreview"
     endif
 endfunction
 " }}}
@@ -49,23 +49,23 @@ let g:gruvbox_guisp_fallback='bg'
 
 " warnings
 let g:vimtex_quickfix_latexlog = {
-			\ 'default' : 1,
-			\ 'general' : 1,
-			\ 'references' : 1,
-			\ 'overfull' : 0,
-			\ 'underfull' : 0,
-			\ 'font' : 1,
-			\ 'packages' : {
-			\   'default' : 1,
-			\   'natbib' : 1,
-			\   'biblatex' : 1,
-			\   'babel' : 1,
-			\   'hyperref' : 1,
-			\   'scrreprt' : 1,
-			\   'fixltx2e' : 1,
-			\   'titlesec' : 1,
-			\ },
-			\}
+            \ 'default' : 1,
+            \ 'general' : 1,
+            \ 'references' : 1,
+            \ 'overfull' : 0,
+            \ 'underfull' : 0,
+            \ 'font' : 1,
+            \ 'packages' : {
+            \   'default' : 1,
+            \   'natbib' : 1,
+            \   'biblatex' : 1,
+            \   'babel' : 1,
+            \   'hyperref' : 1,
+            \   'scrreprt' : 1,
+            \   'fixltx2e' : 1,
+            \   'titlesec' : 1,
+            \ },
+            \}
 " }}}
 
 " settings for ycm {{{
@@ -77,8 +77,8 @@ let g:ycm_seed_identifiers_with_syntax             = 1 "auto complete language k
 let g:ycm_global_ycm_extra_conf = "~/.dotfiles/ycm_extra_conf.py" "set global ycm extra conf path
 let g:ycm_extra_conf_globlist = ['~/cs350-os161/99/.ycm_extra_conf.py']
 let g:ycm_semantic_triggers = {
-			\   'css': [ 're!^\s{4}', 're!:\s+' ],
-			\ } 
+            \   'css': [ 're!^\s{4}', 're!:\s+' ],
+            \ }
 " }}}
 
 " settings for jsx {{{
@@ -89,15 +89,14 @@ let g:jsx_ext_required = 0 " apply jsx syntax hightlight, indent with .js files
 " settings for airline {{{
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1 "show up powerline fonts
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+" let g:airline_powerline_fonts = 1 "show up powerline fonts
+let g:airline_theme='minimalist'
 " }}}
 
 " settings for gundo {{{
 nnoremap <F5> :GundoToggle<CR>
 let g:gundo_width = 60
-let g:gundo_preview_height = 15 
+let g:gundo_preview_height = 15
 let g:gundo_right = 0 " gui show up on the right side
 " }}}
 

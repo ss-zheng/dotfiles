@@ -6,14 +6,14 @@ source ~/.vim/keyMap.vim
 source ~/.vim/plugin.vim
 
 augroup vimrc
-	" Resume last position {{{
-	autocmd BufReadPost *
-				\ if line("'\"") >= 1 && line("'\"") <= line("$") |
-				\   exe "normal! g`\"" |
-				\ endif
-	" }}}
-	autocmd FileType tex,text setlocal spell " set spell for tex and txt files
-	autocmd Filetype tex setl updatetime=1000
+    " Resume last position {{{
+    autocmd BufReadPost *
+                \ if line("'\"") >= 1 && line("'\"") <= line("$") |
+                \   exe "normal! g`\"" |
+                \ endif
+    " }}}
+    autocmd FileType tex,text setlocal spell " set spell for tex and txt files
+    autocmd Filetype tex setl updatetime=1000
 augroup END
 
 if !isdirectory(&undodir)
