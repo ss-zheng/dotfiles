@@ -1,9 +1,10 @@
 " set relativenumber
-" set spell
+"set whichwrap=h,l,<,>,[,]
 "set whichwrap=h,l,<,>,[,]
 set autoindent
 set backspace=indent,eol,start
 set breakindent
+set colorcolumn=120
 set cursorline
 set foldenable
 set gdefault
@@ -22,10 +23,9 @@ set showcmd
 set showmatch
 set smartindent
 set softtabstop=0
+set spell
 set tabstop=4
 set wildmenu
-set colorcolumn=120
-"set whichwrap=h,l,<,>,[,]
 
 " Permanent Undo Settings {{{
 let $VIMDIR=".vim"

@@ -20,6 +20,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+nnoremap <C-c> <C-w>c
 " nnoremap s <Nop>
 " nnoremap S <Nop>
 " }}}

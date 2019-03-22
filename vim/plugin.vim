@@ -1,9 +1,9 @@
 call plug#begin()
-Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
-Plug 'flazz/vim-colorschemes'
 Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
+Plug 'flazz/vim-colorschemes'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'kien/ctrlp.vim'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'w0rp/ale'
 call plug#end()
 
 " settings for markdown-preview {{{
@@ -37,7 +38,9 @@ endfunction
 
 " settings for vim-colorschemes {{{
 colorscheme gruvbox
+" highlight spell error
 set background=dark
+hi SpellBad ctermfg=129
 let g:gruvbox_contrast_dark='medium'
 let g:gruvbox_guisp_fallback='bg'
 " }}}
@@ -110,33 +113,6 @@ let g:gundo_right = 0 " gui show up on the right side
 " settings for ctrlp {{{
 nnoremap fu :CtrlPFunky<CR>
 " }}}
-
-" settings for syntastic {{{
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_quiet_messages = { "level": [], "type": ["style"] }
-
-fun! SyntasticToggleQuiet(k, v)
-	let idx = index(g:syntastic_quiet_messages[a:k], a:v)
-	if idx == -1
-		call add(g:syntastic_quiet_messages[a:k], a:v)
-		echom 'Syntastic: '.a:k.':'.a:v.' disabled (filtered).'
-	else
-		call remove(g:syntastic_quiet_messages[a:k], idx)
-		echom 'Syntastic: '.a:k.':'.a:v.' enabled (not filtered).'
-	endif
-endfun
-nnoremap <silent> <leader>s :call SyntasticToggleQuiet('type', 'style')<CR>
-nnoremap <silent> <leader>w :call SyntasticToggleQuiet('level', 'warnings')<CR>
-" command! SyntasticToggleWarnings call SyntasticToggleQuiet('level', 'warnings')
-" command! SyntasticToggleStyle    call SyntasticToggleQuiet('type', 'style')
-"}}}
 
 " settings for nerdtree {{{
 map <C-n> :NERDTreeToggle<CR>

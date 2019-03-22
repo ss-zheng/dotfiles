@@ -1,4 +1,6 @@
 # vim: ft=sh
+export PATH="$HOME/.local/bin:$PATH"
+
 if [ -r $HOME/.dotfiles/path.local ]; then
 	. $HOME/.dotfiles/path.local
 fi

@@ -1,0 +1,3 @@
+# vim: ft=sh
+source $HOME/.dotfiles/env
+source $HOME/.dotfiles/path
