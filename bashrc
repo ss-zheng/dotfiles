@@ -1,8 +1,5 @@
+# sourced if is not login shell
 [[ $- != *i* ]] && return
-
-if [ -f "~/.profile" ]; then
-    source ~/.profile
-fi
 
 if [ -f "/etc/profile.d/vte.sh" ];then
     source /etc/profile.d/vte.sh  #open the shell under the same directory
@@ -20,10 +17,5 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
     PS1='\[\033[1;32m\] \w\n\[\033[1;34m\]...\[\033[0m\] '
 fi
-
-# export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-# export HISTCONTROL=ignoreboth:erasedups
-
-# if [ -x /bin/showpath ]; then
-#     PATH=`/bin/showpath /u/cs350/sys161/bin /u/cs350/bin standard`$PATH
-# fi
+ 
+export HISTCONTROL=ignoreboth:erasedups # history ignore duplicate commands
