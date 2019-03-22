@@ -24,6 +24,7 @@ set smartindent
 set softtabstop=0
 set tabstop=4
 set wildmenu
+set colorcolumn=120
 "set whichwrap=h,l,<,>,[,]
 
 " Permanent Undo Settings {{{
