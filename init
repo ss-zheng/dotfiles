@@ -1,21 +1,22 @@
 #!/bin/bash 
 
 file_list=(
-	bash_profile
-	bashrc
-	tern-config
-	tmux.conf
-	vim
-	vimrc
-	xprofile
-	zprofile
-	zshenv
-	zshrc
+    bash_profile
+    bashrc
+    tern-config
+    tmux.conf
+    vim
+    vimrc
+    xprofile
+    zprofile
+    zshenv
+    zshrc
+    clang-format
 )
 
 for file in ${file_list[@]}; do
     if [ -e "$HOME/.dotfiles/$file" ]; then
-	rm -rf "$HOME/.$file"
+        rm -rf "$HOME/.$file"
         ln -s "$HOME/.dotfiles/$file" "$HOME/.$file"
         if [ $? = 0 ]; then
             echo "Created symlink $HOME/.$file " "->" " $HOME/.dotfiles/$file" 1>&2

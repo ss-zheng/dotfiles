@@ -40,6 +40,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 source ~/.dotfiles/alias
 source ~/.dotfiles/shell-func
 
-PROMPT='%B%2F %~ 
+if [[ -n $SSH_CONNECTION ]]; then
+    PROMPT='%B%2Fssh %~ 
 %4F>>> %f%b'
+else
+    PROMPT='%B%2F %~ 
+%4F>>> %f%b'
+fi
+
 

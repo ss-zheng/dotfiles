@@ -1,0 +1,26 @@
+# -*- mode: yaml -*-
+
+---
+AccessModifierOffset: 0
+AlignTrailingComments: false
+# AllowShortBlocksOnASingleLine: true
+# AllowShortCaseLabelsOnASingleLine: true
+# AllowShortIfStatementsOnASingleLine: true
+# AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Empty
+# AlwaysBreakTemplateDeclarations: Yes
+# BinPackArguments: false
+# BinPackParameters: false
+BreakBeforeBinaryOperators: NonAssignment
+ColumnLimit: 120
+IncludeCategories:
+  - Regex: '^<'
+    Priority: 1
+  - Regex: '^"'
+    Priority: 2
+IndentWidth: 4
+IndentCaseLabels: true
+SpacesInParentheses: true
+...
+
+# vim: ft=yaml

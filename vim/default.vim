@@ -1,6 +1,5 @@
 " set relativenumber
 "set whichwrap=h,l,<,>,[,]
-"set whichwrap=h,l,<,>,[,]
 set autoindent
 set backspace=indent,eol,start
 set breakindent
@@ -14,7 +13,7 @@ set lazyredraw
 set linebreak
 set modeline
 set mouse=a
-set noexpandtab
+set expandtab
 set nowritebackup
 set number
 set scrolloff=5
@@ -23,7 +22,6 @@ set showcmd
 set showmatch
 set smartindent
 set softtabstop=0
-set spell
 set tabstop=4
 set wildmenu
 
@@ -54,7 +52,7 @@ set foldtext=NeatFoldText()
 " }}}
 
 " Spell setting {{{
-set spell spelllang=en_ca
+set spelllang=en_ca
 " hi clear SpellBad
 " hi SpellBad cterm=underline
 " }}}
